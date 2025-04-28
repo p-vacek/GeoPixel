@@ -1,0 +1,36 @@
+# pyproject.toml
+
+[build-system]
+# Specifies the build tools needed to build your package
+requires = ["setuptools>=61.0"] # Use setuptools as the build backend
+build-backend = "setuptools.build_meta"
+
+[project]
+# Core metadata about your package
+name = "GeoPixel" # The distribution name (pip install your_package_name)
+version = "0.1.0" # Your package's version
+authors = [
+  { name="Patrik Vacek", email="vacek@spaceknow.com" },
+]
+description = "A foundation model forked repository for GeoPixel implementation on multiple gpu setup"
+readme = "README.md" # Specifies the file to use as the long description
+license = { file="LICENSE" }
+requires-python = ">=3.10" # Minimum Python version required
+classifiers = [ # Standard classifiers from PyPI
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License", # Match your LICENSE file
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # List runtime dependencies here, e.g.:
+    # "requests>=2.20.0",
+    # "numpy",
+]
+
+[project.urls]
+# Optional: Links related to your project
+
+
+# --- Optional Setuptools Configuration (can also go in setup.cfg) ---
+# [tool.setuptools.packages.find]
+# where = ["src"]  # Look for packages in the 'src' directory
